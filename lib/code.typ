@@ -48,6 +48,11 @@
 
       let code-styled = if numbers {
         set raw(align: start, block: true)
+        show raw.line: it => {
+          text(fill: rgb("#95a5a6"), size: 8pt)[#it.number]
+          h(1em)
+          it.body
+        }
         content
       } else {
         content
