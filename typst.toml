@@ -1,0 +1,7 @@
+[package]
+name = "tydoc"
+version = "0.1.0"
+entrypoint = "template/main.typ"
+authors = ["Noé Henchoz"]
+license = "MIT"
+description = "A modular, ready-to-use template for modern Typst documents"
