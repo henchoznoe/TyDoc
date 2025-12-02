@@ -10,6 +10,7 @@
 #import "template/main.typ": project
 #import "lib/alerts.typ": alert-box, error, info, success, warning
 #import "lib/code.typ": code-frame
+#import "lib/badges.typ": badge
 
 #show: project.with(
   title: "TyDoc Components Gallery",
@@ -83,3 +84,9 @@ Examples of code highlighting using `lib/code.typ`.
   }
   ```
 ]
+
+= Badges
+Examples of badges using `lib/badges.typ`.
+
+This feature is available since version #badge("v1.2", color: blue).
+This module is marked as #badge("Deprecated", color: red).
