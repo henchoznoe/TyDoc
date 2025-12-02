@@ -1,10 +1,10 @@
 // -------------------------------------------------------------------------
 // File: lib/alerts.typ
-// Author: Noé Henchoz
+// Authors : Noé Henchoz & Yoan Gilliand
 // Date: 2025-12-01
 // Description: Component for displaying alert/admonition boxes.
 // License: MIT
-// Copyright: (c) 2025 Noé Henchoz
+// Copyright: (c) 2025 Noé Henchoz & Yoan Gilliand
 // -------------------------------------------------------------------------
 
 // --- Constants ---

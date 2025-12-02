@@ -1,4 +1,4 @@
-# TyDoc
+# Typify
 
 A modular template for creating Typset documents efficiently.
 

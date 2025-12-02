@@ -1,5 +1,5 @@
 [package]
-name = "tydoc"
+name = "Typify"
 version = "0.1.0"
 entrypoint = "template/main.typ"
 authors = ["Noé Henchoz"]

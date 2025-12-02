@@ -1,10 +1,10 @@
 // -------------------------------------------------------------------------
 // File: template/components/footer.typ
-// Author: Noé Henchoz
+// Authors : Noé Henchoz & Yoan Gilliand
 // Date: 2025-12-02
-// Description: Footer component for the TyDoc template.
+// Description: Footer component for the Typify template.
 // License: MIT
-// Copyright: (c) 2025 Noé Henchoz
+// Copyright: (c) 2025 Noé Henchoz & Yoan Gilliand
 // -------------------------------------------------------------------------
 
 #import "../config.typ": *

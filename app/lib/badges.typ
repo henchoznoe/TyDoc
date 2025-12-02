@@ -1,10 +1,10 @@
 // -------------------------------------------------------------------------
 // File: lib/badges.typ
-// Author: Noé Henchoz
+// Authors : Noé Henchoz & Yoan Gilliand
 // Date: 2025-12-02
 // Description: Component for inline badges and tags.
 // License: MIT
-// Copyright: (c) 2025 Noé Henchoz
+// Copyright: (c) 2025 Noé Henchoz & Yoan Gilliand
 // -------------------------------------------------------------------------
 
 // --- Constants ---

@@ -1,12 +1,12 @@
 # -------------------------------------------------------------------------
 # File: .github/workflows/build.yml
-# Author: Noé Henchoz
+# Authors : Noé Henchoz & Yoan Gilliand
 # Description: GitHub Actions workflow to compile the Typst demo document.
 # License: MIT
-# Copyright: (c) 2025 Noé Henchoz
+# Copyright: (c) 2025 Noé Henchoz & Yoan Gilliand
 # -------------------------------------------------------------------------
 
-name: Build TyDoc Demo
+name: Build Typify Demo
 
 on:
   push:

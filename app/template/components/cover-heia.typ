@@ -1,28 +1,30 @@
 // -------------------------------------------------------------------------
-// File: template/components/cover.typ
-// Author: Noé Henchoz
+// File: template/components/cover-heia.typ
+// Authors : Noé Henchoz & Yoan Gilliand
 // Date: 2025-12-02
-// Description: Cover page component for the TyDoc template.
+// Description: HEIA-FR cover page component.
 // License: MIT
-// Copyright: (c) 2025 Noé Henchoz
+// Copyright: (c) 2025 Noé Henchoz & Yoan Gilliand
 // -------------------------------------------------------------------------
 
 #import "../config.typ": *
 
-// Cover page rendering
-#let cover-page(title, authors, formatted-date, subtitle: none, classe: none) = {
+// Cover page rendering (HEIA theme)
+#let cover-page-heia(title, authors, formatted-date, subtitle: none, classe: none, theme) = {
   set page(header: none, footer: none)
 
   // Header image (respects margins)
-  align(center)[
-    #image("../../assets/cover.png", width: 100%)
-  ]
+  if theme.cover-image != none {
+    align(center)[
+      #image(theme.cover-image, width: 100%)
+    ]
+  }
 
   v(1.5cm)
 
   // Title
   align(center)[
-    #text(size: 20pt, weight: "bold", fill: COLOR_PRIMARY)[
+    #text(size: 20pt, weight: "bold", fill: theme.primary)[
       #title
     ]
   ]
@@ -39,7 +41,7 @@
   // Subtitle (if provided)
   if subtitle != none {
     align(center)[
-      #text(size: 18pt, weight: "regular", fill: COLOR_PRIMARY)[
+      #text(size: 18pt, weight: "regular", fill: theme.primary)[
         #subtitle
       ]
     ]
@@ -48,12 +50,12 @@
 
   v(1fr)
 
-  // Brown rectangle with remaining space
+  // Information rectangle
   rect(
     width: 100%,
     height: if subtitle != none { 7cm } else { 9cm },
-    fill: COLOR_BROWN,
-    stroke: 2pt + COLOR_BROWN_BORDER,
+    fill: theme.accent,
+    stroke: 2pt + theme.accent-border,
     inset: 1.5cm,
     {
       set text(fill: black, size: 12pt)
